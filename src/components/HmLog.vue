@@ -8,5 +8,11 @@
 export default {}
 </script>
 
-<style>
+<style lang = "less">
+  .hm-log {
+      text-align: center;
+      .iconfont {
+      font-size: 126px;
+    }
+  }
 </style>
