@@ -13,6 +13,7 @@ export default {}
       text-align: center;
       .iconfont {
       font-size: 126px;
+      color : skyblue
     }
   }
 </style>

@@ -13,7 +13,13 @@ import 'amfe-flexible'
 import HmHeader from './components/HmHeader.vue'
 // 全局引入log
 import HmLog from './components/HmLog.vue'
+// 配置axios全局引入
+import axios from 'axios'
+// 把axios挂载到vue原型上
+Vue.prototype.$axios = axios
 
+// 给axios配置默认的baseURL,基准地址
+axios.defaults.baseURL = 'http://127.0.0.1:3000'
 Vue.component('hm-header', HmHeader)
 
 Vue.component('hm-log', HmLog)
