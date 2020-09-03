@@ -26,7 +26,7 @@
       <template>我的跟帖</template>
       <template #content>跟帖/回复</template>
   </hm-nav>
-   <hm-nav>
+   <hm-nav to = "/mystar">
       <template>我的收藏</template>
       <template #content>文章/视频</template>
   </hm-nav>

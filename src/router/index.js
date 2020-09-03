@@ -10,6 +10,8 @@ import UserEdit from '../views/UserEdit.vue'
 import MyFollow from '../views/MyFollow.vue'
 // 全局引入MyComment
 import MyComment from '../views/MyComment.vue'
+// 全局引入我的收藏 MyStar
+import MyStar from '../views/MyStar.vue'
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push (location) {
   return originalPush.call(this, location).catch(err => err)
@@ -23,7 +25,8 @@ const routes = [
   { path: '/user', component: User, name: 'user' },
   { path: '/useredit', component: UserEdit, name: 'useredit' },
   { path: '/myfollow', component: MyFollow, name: 'myfollow' },
-  { path: '/mycomment', component: MyComment, name: 'mycomment' }
+  { path: '/mycomment', component: MyComment, name: 'mycomment' },
+  { path: '/mystar', component: MyStar, name: 'mystar' }
 ]
 
 const router = new VueRouter({
