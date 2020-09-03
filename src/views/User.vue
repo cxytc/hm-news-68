@@ -11,18 +11,18 @@
           <span>{{user.nickname}}</span>
         </div>
         <div class="time">
-         {{user.create_date | item}}
+         {{user.create_date | time}}
         </div>
       </div>
       <div class="arrow">
         <span class="iconfont iconjiantou1"></span>
       </div>
     </div>
-     <hm-nav to = "/follow">
+     <hm-nav to = "/myfollow">
       <template>我的关注</template>
       <template #content>关注的内容</template>
   </hm-nav>
-   <hm-nav>
+   <hm-nav to= "/mycomment">
       <template>我的跟帖</template>
       <template #content>跟帖/回复</template>
   </hm-nav>
