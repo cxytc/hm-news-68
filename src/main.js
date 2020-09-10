@@ -16,6 +16,10 @@ import './utlis/request'
 import './utlis/filters'
 // 全局导入Vant
 import './utlis/vant'
+// 创建一个bus公共的
+const bus = new Vue()
+// 把bus挂载到vue的实例上
+Vue.prototype.$bus = bus
 
 Vue.config.productionTip = false
 
